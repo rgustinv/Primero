@@ -1,0 +1,95 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    color: black;
+}
+
+.encabezado, .cuerpo, .derecha, .pie {
+    flex: 1 1 100% ; 
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.titulo, .menu{
+    flex: 1 1 100%
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+}
+
+.menu ul {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu ul li{
+    color: white;
+    background: #ed1515;
+    border: 1px solid black;
+    width: 32%
+}
+.encabezado{
+    background: #bfbff5;
+}
+.cuerpo{
+    background: white;
+    text-align: justify;
+}
+.cuerpo h2{
+    text-align: center;
+    background: black;
+    color: white;
+}
+.cuerpo img {
+    float: left;
+}
+.derecha{
+    background: #8a9be5
+}
+.pie {
+    background: #4a44e6;
+}
+
+/*
+La regla @media nos permite especificar que cierto conjunto de reglas CSS solo deben aplicarse a cierto tipo de dispositivo. Así las definiciones dentro del bloque de la regla @media screen { ... } solo serían interpretadas por dispositivos conectados a monitores de ordenador y los de la regla @media projection { ... } solo se aplicaría a proyectores, en este caso se aplicó “all” para todos los dispositivos y se controla por el ancho.
+*/
+@media all and (min-width: 600px){
+    .aside{
+        flex: 1 1 auto;
+    }    
+}
+@media all and (min-width:800px){
+    .cuerpo {
+        flex: 80% 0;
+        order: 1;
+    }
+    .derecha{
+        order: 2;
+        text-align: left
+    }
+    .pie {
+        order: 3;
+    }
+}
+.tabla{
+    width:100%;
+}
+.tabla, td, th {
+    border:1px solid white;
+} 
