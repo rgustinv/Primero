@@ -93,3 +93,49 @@ La regla @media nos permite especificar que cierto conjunto de reglas CSS solo d
 .tabla, td, th {
     border:1px solid white;
 } 
+/*Estilos y animacion de barra lateral*/
+.red{
+    position: fixed;
+    top: 200px;
+    z-index: 100; /*Prioridad*/
+    left: 0;
+}
+#wikipedia a{
+    font-size: 15px;
+    background: red;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    width: 20px;
+    transition: all .5s ease;
+}
+#wikipedia a:hover{
+    background: black;
+    padding: 10px 40px;
+}
+#google a{
+    font-size: 15px;
+    background: blue;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    width: 20px;
+    transition: all .5s ease;
+}
+#google a:hover {
+    background: black;
+    padding: 10px 40px;
+}
+#otra a{
+    font-size: 15px;
+    background: orange;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    width: 20px;
+    transition: all .5s ease;
+}
+#otra a:hover {
+    background: black;
+    padding: 10px 40px;
+}
